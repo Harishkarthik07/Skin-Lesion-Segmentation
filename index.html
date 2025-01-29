@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Lesion Segmentation</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- For icons -->
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Detect Skin Lesions with AI</h1>
+                <p>Upload a dermoscopic image, and let AI detect possible skin tumors or lesions. It's fast, easy, and accurate.</p>
+                <form action="/upload" method="POST" enctype="multipart/form-data" class="upload-form">
+                    <div class="upload-container">
+                        <input type="file" name="file" id="file" required>
+                        <button type="submit" class="upload-btn">Upload Image <i class="fas fa-upload"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="hero-img">
+                <img src="https://via.placeholder.com/400x300" alt="AI Detecting Skin Lesions">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About the Technology</h2>
+            <p>Our skin lesion segmentation model is powered by cutting-edge deep learning technology. It uses Convolutional Neural Networks (CNN) to analyze dermoscopic images and detect potential skin cancer.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Skin Lesion Segmentation | Powered by AI</p>
+    </footer>
+</body>
+</html>
+

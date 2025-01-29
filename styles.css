@@ -1,0 +1,208 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and font settings */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+header {
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    padding-top: 80px;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: slideIn 2s ease-out;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.upload-container input[type="file"] {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.upload-container input[type="file"]:hover {
+    background-color: #ddd;
+}
+
+.upload-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.upload-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.hero-img img:hover {
+    transform: scale(1.1);
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .upload-container {
+        flex-direction: column;
+    }
+
+    .upload-container input[type="file"] {
+        margin-bottom: 15px;
+    }
+}
